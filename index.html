@@ -5,8 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="assets/css/bootstrap.css">
 <link rel="stylesheet" href="assets/css/obrazil.css">
+<link rel="shortcut icon" href="img/Logo-Obrazil.png">
 <script src="assets/js/bootstrap.bundle.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <title>Restaurant Ô Brazil</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,219 +21,332 @@
     
 <!--HEADER w/ NAV BAR-->
 
-<header> 
+
 
 <!--NAV BAR-->
-
-<nav class="navbar navbar-expand-lg">
-    
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img class="logonav" src="img/logonav.png" alt="logo obrazil avec toucan"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <div class="row">
-                    <div class="col md-7"></div>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">NOTRE CARTE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">GALERIE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">NOTRE RESTAURANT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">NOUS CONTACTER</a>
-                        </li>
-                        </ul>
-                    </div>                             
-                <div class="col-md-3">
-                    <div class="navbar-text">
-                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                        <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
-                        <i class="fa-brands fa-tiktok" style="color: #ffffff;"></i>
-                    </div>
-                </div>
-                <div class="col-md-2">
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg mb-0 pt-0 navbar-hidden">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/Logo-Obrazil-nav-bar.png" alt=""></a>
+            <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="color: #DEAB30;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">      
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FRANCAIS</a>
+                        <a class="nav-link" href="notre-carte.html" style="white-space: nowrap;">NOTRE CARTE</a>
                     </li>
-                </div>
-            </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerie.html" style="white-space: nowrap;">GALERIE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notre-restaurant.html" style="white-space: nowrap;">NOTRE RESTAURANT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html" style="white-space: nowrap;">NOS SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nous-contacter.html" style="white-space: nowrap;">NOUS CONTACTER</a>
+                    </li>
+                    <li class="social-media">
+                        <a class="navsocial" href="https://instagram.com/restaurantobrazil?igshid=YTQwZjQ0NmI0OA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="social-media">
+                        <a class="navsocial" href="https://www.facebook.com/p/Restaurant-O-Brazil-100063755682659/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    </li>
+                    <li class="social-media">
+                        <a class="navsocial" href="https://www.tiktok.com/@restaurantobrazil67" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    </li>
+                </ul>               
+              <!--   <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <a href="" alt="#">FRANCAIS</a>
+                </button> -->
         </div>
-    </div>
-  </nav>
+    </nav>
+</header>
 
 
 <!-- HERO-->
-        <div class="hero">
-            <img class="img-fluid" src="img/fondherogrand.png" alt="cadre feuilles tropicales">
-        </div>
-    </header>
 
-<!--BIENVENUE-->
+<div class="hero"></div>
+   
 
-    <article>
-        <div class="container">
-            <div class="introduction">
-                <img src="#typoObrazil" alt="O Brazil stylisé en écriture à main levée">
-                <p>Votre restaurant traiteur brésilien à Strasbourg
-                    Luis et son équipe sont heureux de vous accueillir dans leur restaurant.
-                    Riches de l'expérience de notre premier restaurant à Colmar, 
-                    c'est à Strasbourg que nous avons déposé nos bagages aujourd'hui.</p>
+<!--WELCOME-->
+
+<article class="backgroundsvg">
+    <img class="leafwelcome img-fluid" src="img/Feuilles vecto/feuilles1.png" alt="">
+    <div class="container">
+            <div class="row">
+                <div class="welcome col-12 text-center">
+                    <div class="col-12">
+                        <img class="#" src="img/Logo-Obrazil-typo.png" alt="O Brazil stylisé en écriture à main levée">
+                    </div>
+                    <h1>Votre restaurant traiteur brésilien à Strasbourg</h1>
+                    <p>   Luis et son équipe sont heureux de vous accueillir dans leur restaurant.</p>
+                    <p>Riches de l'expérience de notre premier restaurant à Colmar, 
+                        c'est à Strasbourg que<br> nous avons déposé nos bagages aujourd'hui.</p>
+                </div>
             </div>
-        </div>
-    </article>
+    </div>
+</article>
 
 <!--CARROUSEL-->
 
-    <article id="carrousel">
-        <div>
-            <p>Votre restaurant traiteur brésilien à Strasbourg
-                Luis et son équipe sont heureux de vous accueillir dans leur restaurant.</p>
+<div class="backgroundsvgcarousel">
+    <div class="containerslider">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slider/salle1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/salle2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/salle3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/salle4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/salle5.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </article>
-
-        <div class="slider-container">
-            <div class="slide"><img src="image1.jpg" alt="Image 1"></div>
-            <div class="slide"><img src="image2.jpg" alt="Image 2"></div>
-            <div class="slide"><img src="image3.jpg" alt="Image 3"></div>
-        </div>
-    <button id="prevBtn">&#x3008;</button>
-    <button id="nextBtn">&#x3009;</button>
-    <script src="script.js"></script>
+    </div>
+    <div class="caroutext">
+        <p>Votre restaurant traiteur brésilien à Strasbourg</p>
+        <p>Luis et son équipe sont heureux de vous accueillir dans leur restaurant.</p>
+    </div>
+</div>
 
 
 
 <!--NOTRE CARTE-->
 
 
-<article>
-    <div class="container">
-        <div class="carteimg">
-            <img src="#plat" alt="plat">
+<article class="container">
+    <img class="leafcarte img-fluid" src="img/Feuilles vecto/feuilles2.png" alt="">
+        <div class="rowcarte">
+            <div class="carteimg">
+                <img class=img-fluid src="img/plat.webp" alt="plat">
+            </div>
+                <div class="notrecarte">
+                    <p>Découvrez nos menus teintés par le soleil brésilien. 
+                        Ou bien optez pour un repas à la carte.</p>
+                    <p>Faites votre choix parmi une grande variété de salades, beignets.</p>
+                    <p>Du Nord au Sud du Brésil, voyagez avec des plats riches en viandes, 
+                        en poissons ou encore totalement végétariens.</p>
+                    <p>Des recettes dans la grande tradition brésilienne et pour tous les goûts.</p>
+                    <p>Venez en famille : ici, bonne humeur garantie et les enfants ont un menu enfant complet, 
+                        rien que pour eux, avec du choix.</p>
+                    <p>Contactez-nous par téléphone ou réservez votre table directement via notre site en 
+                        cliquant sur "Réservez ici" en haut de la page.</p>
+                </div>                        
+            <div class="btn-notrecarte">
+                <a class="btn btn-jaune" href="#boutonlien">Notre carte</a>
+            </div>
         </div>
-        <div class="notrecarte">
-            <p>
-                Découvrez nos menus teintés par le soleil brésilien. 
-                Ou bien optez pour un repas à la carte.
-                Faites votre choix parmi une grande variété de salades, beignets. 
-                Du Nord au Sud du Brésil, voyagez avec des plats riches en viandes, 
-                en poissons ou encore totalement végétariens. 
-                Des recettes dans la grande tradition brésilienne et pour tous les goûts.
-                Venez en famille : ici, bonne humeur garantie et les enfants ont un menu enfant complet, 
-                rien que pour eux, avec du choix
-                Contactez-nous par téléphone ou réservez votre table directement via notre site en 
-                cliquant sur "Réservez ici" en haut de la page.
-            </p>
-        </div>
-        <a href="#boutonlien">Notre carte</a>
-    </div>
 </article>
 
 <!--BANNER CORCOVADO-->
 
 <div class="banner">
-    <img src="bannercorcovado" alt="Image du Christ Redempteur au sommet du Corcovado au Brésil">
+   
 </div>
 
 <!--NOS SERVICES-->
 
 <article class="services">
+    <img class="leafservice img-fluid" src="img/Feuilles vecto/feuilles3.png" alt="">
+    <img class="leaftraiteur img-fluid" src="img/Feuilles vecto/feuilles4.png" alt="">
     <div class="container">
-        <a class="boutonservice" href="#lien">Nos Services</a>
-            <div>
-                <img src="#service1" alt="service1">
+        <a class="btn btn-jaune" href="#lien">Nos Services</a>
+        <div class="service1">
+            <img class="img-fluid" src="img/slider/salle2.jpg" alt="service1">
+            <div class="restauration">
+                <p>
+                    Bienvenue au cœur de notre restaurant brésilien, 
+                    où l'exotisme et la passion culinaire se rencontrent pour vous offrir une expérience gastronomique inoubliable.
+                </p>
+                <p>
+                    Notre service de restauration incarne l'essence même de la cuisine brésilienne, 
+                    mettant en avant la richesse des saveurs et la diversité des plats issus des différentes régions du Brésil.
+                </p>
             </div>
-                        <div class="restauration"> 
-                            <p>
-                                Lorem Elsass ipsum sed condimentum gravida kartoffelsalad merci vielmols sagittis
-                                sed nüdle Spätzle sit Chulia Roberstau ac risus, vielmols, leo Morbi sit Gal. varius DNA, 
-                                quam.   hopla elit consectetur et adipiscing habitant sit kougelhopf munster wurscht 
-                                Huguette Heineken leverwurscht schneck  ornare vulputate elementum Coopé de 
-                                Truchtersheim mollis geht's météor commodo Verdammi aliquam rhoncus kuglopf 
-                                gewurztraminer bredele
-                                ullamcorper schnaps hopla amet, wie amet porta id tristique flammekueche dolor 
-                                baeckeoffe Oberschaeffolsheim Oberschaeffolsheim Strasbourg libero, 
-                                Pellentesque lacus turpis und s'guelt libero, in, Christkindelsmärik senectus 
-                                suspendisse bissame pellentesque messti de Bischheim yeuh.
-                            </p>
-                        </div>
-                    <a class="boutonrestauration" href="#lien">Restauration</a>
-
-                <div>
-                    <img src="#service2" alt="service2">
-                        </div>
-                            <div class="traiteur"> 
-                                <p>
-                                    Lorem Elsass ipsum sed condimentum gravida kartoffelsalad merci vielmols sagittis
-                                    sed nüdle Spätzle sit Chulia Roberstau ac risus, vielmols, leo Morbi sit Gal. varius DNA, 
-                                    quam.   hopla elit consectetur et adipiscing habitant sit kougelhopf munster wurscht 
-                                    Huguette Heineken leverwurscht schneck  ornare vulputate elementum Coopé de 
-                                    Truchtersheim mollis geht's météor commodo Verdammi aliquam rhoncus kuglopf 
-                                    gewurztraminer bredele
-                                    ullamcorper schnaps hopla amet, wie amet porta id tristique flammekueche dolor 
-                                    baeckeoffe Oberschaeffolsheim Oberschaeffolsheim Strasbourg libero, 
-                                    Pellentesque lacus turpis und s'guelt libero, in, Christkindelsmärik senectus 
-                                    suspendisse bissame pellentesque messti de Bischheim yeuh.
-                                </p>
-                            </div>
-                        <a class="boutonrestauration" href="#lien">Restauration</a>
+            <a class="btn btn-noir" href="#lien">Restauration</a>
+        </div>
+        
+        <div class="service2">
+            <img class="img-fluid" src="img/slider/salle4.jpg" alt="service2">
+            <div class="traiteur">
+                <p>
+                    Transformez vos événements en festins mémorables avec notre service traiteur brésilien, 
+                    où la passion de la cuisine rencontre l'élégance du service. Que ce soit pour des célébrations privées, 
+                    des événements d'entreprise ou des occasions spéciales.
+                </p>
+                <p>
+                    Chaque menu est soigneusement conçu pour satisfaire tous les palais, 
+                    offrant une expérience culinaire exceptionnelle adaptée à vos besoins et préférences.
+                </p>
+            </div>
+            <a class="btn btn-jaune" href="#lien">Traiteur</a>                                 
+        </div>
     </div>
 </article>
 
+
+
 <!--BANNER RESTAURANT BAS DE PAGE-->
 
-<div class="banner">
-    <img src="#bannerrestauparralax" alt="paralax du restau">
+<div class="banner2">
+    <img src="img/slider/planlargesalle.jpg" alt="paralax du restau">
 </div>
 
 <!--SECTION ACCES+GOOGLE MAP-->
 
 <div class="container">
-    <div class="acces">
-        <p>Nous contacter 
-            Situé à quelques pas de la place Kleber à Strasbourg, le restaurant Ô brazil
-            vous fera découvrir des saveurs du Brésil           
-            Adresse : 13 Rue du Jeu des Enfants 67000 Strasbourg
-            Mail : 
-            Téléphone :  03 90 24 93 52         
-            Accès :            
-            Lorem Elsass ipsum turpis sit mänele eleifend ftomi! kuglopf Wurschtsalad placerat sit yeuh. 
-            ornare schpeck ac senectus mamsell ac wie sed dolor so und rucksack pellentesque Racing.</p>
+    <div class="row">
+        <div class="acces col-6">
+            <img class="leafgoogle img-fluid" src="img/Feuilles vecto/feuilles5.png" alt="">
+            <p><strong>Nous contacter </strong></p>
+            <p>Situé à quelques pas de la place Kleber à Strasbourg, le restaurant Ô brazil
+                vous fera découvrir des saveurs du Brésil </p>   
+            <p>Adresse : 13 Rue du Jeu des Enfants 67000 Strasbourg</p>
+            <p>Mail : </p>
+            <p>Téléphone :  03 90 24 93 52</p>
+            <p>Accès : </p>   
+            <p>Depuis la gare de Strasbourg, vous pouvez prendre un taxi, 
+                un tramway ou marcher jusqu'à la rue du Jeu des Enfants. <br><br>
+                En tramway, vous pouvez prendre la ligne A en direction d'Illkirch Graffenstaden 
+                et descendre à l'arrêt "Langstross - Grand'Rue". De là, la rue du Jeu des Enfants est à quelques minutes à pied.</p>
+        </div>
+        <div class="googlemap col-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4702.907857878821!2d7.741823568233663!3d48.58270016343326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479165de5c491b21%3A0x18a707ce3c95f23f!2sRestaurant%20O%20Brazil%20SARL%20LUITON!5e0!3m2!1sfr!2sfr!4v1700408687924!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
-    <!--Comment intégrer google map ?-->
 </div>
 
-<!--FOOTER FONTICONES A INTEGRER-->
 
-<footer>
-    <ul id="suiveznous" class="container">
-        <li>Suivez nous:</li>
-        <li>Facebook</li>
-        <li>Instagram</li>
-        <li>Tiktok</li>
-    </ul>
+<!--FOOTER WEB-->
+
+<footer class="footerweb">
+        <div class="follow">
+            <div class="container">
+                    <ul>
+                        <li class="col-3">
+                            Suivez nous:<br><i class="fa-solid fa-arrow-right"></i>
+                        </li>
+                        <li class="col-3">
+                            <a class="navsocial" href="https://www.facebook.com/p/Restaurant-O-Brazil-100063755682659/" target="_blank">Facebook<br><i class="fa-brands fa-square-facebook"></i></a>
+                        </li>
+                        <li class="col-3">
+                            <a class="navsocial" href="https://instagram.com/restaurantobrazil?igshid=YTQwZjQ0NmI0OA==" target="_blank">Instagram<br><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="col-3">
+                            <a class="navsocial" href="https://www.tiktok.com/@restaurantobrazil67" target="_blank">Tiktok<br><i class="fa-brands fa-tiktok"></i></a>
+                        </li>
+                        
+                    </ul>
+            </div>
+        </div>
+        <div class="footerline2">
+            <div class="container">
+                <ul>
+                    <li class="col-3">Du mardi au Samedi <br> Midi et Soir</li>
+                    <li class="col-3">email@obrazil.fr<br><i class="fa-solid fa-envelope"></i></li>
+                    <li class="col-3">13 rue du Jeu des Enfants 67000 Strasbourg</li>
+                    <li class="col-3">03 90 24 93 52<br><i class="fa-solid fa-phone"></i></li>
+                </ul>
+            </div>
+        </div>
+            <div class="footerline3">
+                <div class="container">
+                    <ul>
+                        <li class="col-3">
+                            <a href="index.html">Accueil<br><i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li class="col-3">
+                            <a href="a-propos.html">A propos<br><i class="fa-solid fa-circle-info"></i></a>
+                        </li>
+                        <li class="col-3">
+                            <a href="mentions-legales.html.html">Mentions légales<br><i class="fa-solid fa-scale-balanced"></i></a>
+                        </li>
+                        
+                        <li class="col-3">
+                            <a href="plan-du-site.html">Plan du site<br><i class="fa-solid fa-map"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
 </footer>
-    <adress>
-        <ul class="container">
-            <li>Du mardi au Samedi Midi et Soir</li>
-            <li>email@obrazil.fr</li>
-            <li>13 rue du Jeu des Enfants 67000 Strasbourg</li>
-            <li>03 90 24 93 52</li>
-        </ul>
-    </adress>
-        <nav class="container">
-            <ul>
-                <li>Accueil</li>
-                <li>A propos</li>
-                <li>Mentions légales</li>
-                <li>Plan du site</li>
-            </ul>
-        </nav>
+
+<!--FOOTER MOBILE-->
+
+<footer class="footermobile">
+        <div class="row g-0">
+            <div class="contactfooter col-12">
+                <p></p>
+                <p>13 rue du Jeu des Enfants</p>
+                <p>67000 Strasbourg</p>
+                <p>03 90 24 93 52</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center g-0">
+            <div class="socialfooter col-12">
+                <a class="navsocial" href="https://www.facebook.com/p/Restaurant-O-Brazil-100063755682659/"target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a class="navsocial" href="https://instagram.com/restaurantobrazil?igshid=YTQwZjQ0NmI0OA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a class="navsocial" href="https://www.tiktok.com/@restaurantobrazil67" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <div class="mobfoot row g-0">
+            <div class="lowfooter1 col-4">
+                <i class="fa-solid fa-file-contract"></i>
+                <p>Mentions légales</p>
+            </div>
+            <div class="lowfooter2 col-4">
+                <i class="fa-solid fa-circle-info"></i>
+                <p>A propos</p> 
+            </div>
+            <div class="lowfooter3 col-4">
+                <i class="fa-regular fa-envelope"></i>
+                <p>Contact</p>
+            </div>
+        </div>
+</footer>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var lastScrollTop = 0;
+
+        window.addEventListener('scroll', function () {
+            var st = window.pageYOffset || document.documentElement.scrollDown;
+
+            if (st > 600) {
+                document.querySelector('.navbar').classList.remove('navbar-hidden');
+            } else {
+                document.querySelector('.navbar').classList.remove('navbar-hidden');
+            }
+            lastScrollTop = st <= 0 ? 0 : st;
+        });
+    });
+</script>
+
+
+
+
 
 </body>
 </html>

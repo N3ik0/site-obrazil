@@ -1,67 +1,831 @@
 :root {
-    --background:#0a0b0a;
-    --blanc:#F7F7F2
-    --dore:#DEAB30;
+    --background: #0a0b0a;
+    --lightgray: #3A403A;
+    --darkgrey: #222725;
+    --night: #121113;
+    --blanc: #F7F7F2;
+    --dore: #DEAB30;
+    --chili: #D1462F;
+    --green: #0E583D;
 }
-
-
 
 body {
     background-color: #0A0B0A;
-    color:#F7F7F2;
+    color: #F7F7F2;
     font-family: 'Comfortaa', sans-serif;
 }
 
+/* BREADCRUMB */
 
-.introduction {
-    border: 2px solid #F7F7F2;
-    margin:2px;
-    text-align: center;
+.breadcrumb{
+    margin-top:5.5rem;
+    margin-bottom: 2rem;
+    background-color: var(--background);
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: var(--blanc);
+    font-size:1rem
+}
+.breadcrumb-item.active {
+    color:var(--dore);
+    font-size:1rem;
+}
+
+/* BOUTONS SITE */
+
+.btn-jaune {
+    background-color:var(--dore);
+    color:var(--background);
+    font-family: 'lato', sans-serif;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.btn-noir {
+    background-color:var(--night);
+    color:var(--blanc);
+    font-family: 'lato', sans-serif;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0;
+    border: var(--blanc) 1px solid;
+}
+
+.btn-noir:hover{
+    background-color: var(--green);
+}
+
+.btn-jaune:hover {
+    background-color: var(--green);
+}
+
+/* TITRES */
+
+.title {
+    font-size: 1.7rem;
+    color: var(--blanc);
+    background-color: var(--darkgrey);
+    border-radius: 15px 15px 15px 15px;
+    border: var(--night) thick double;
+    font-weight: 700;
 }
 
 
+
+/* NAV BAR */
 
 .navbar {
     background-color: var(--background);
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 0 auto;
 }
 
+#navbarSupportedContent {
+    padding-top:1.5rem;
+}
+
+#navbarSupportedContent ul {
+    padding-right:1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+#navbarSupportedContent li:not(:last-child) {
+    padding-right:1.5rem;
+}
+#navbarSupportedContent li:hover{
+    color: var(--chili);
+}
+
+.navbar-hidden {
+    display: none;
+}
+
+
 .navbar a {
-    color:var(--blanc)
+    color: var(--blanc);
 }
 
 .navbar i {
-    color:var(--blanc);
+    color: var(--blanc);
     font-size: 25px;
-    margin-right:1.5rem;
+    margin-right: 1rem;
+    padding-top:10%;
+    margin-left:25%;
+
 }
 
-.nav-item {
-    margin-right:4rem;
+.logo-section {
+    padding-right: 30px; 
 }
 
-.navbar-text {
-    margin-right:2rem;
+.language {
+    background-color: var(--lightgray);
+    padding:1.3rem;
 }
 
-.collapse {
-    padding-top: 0;
-    padding-bottom: 0;
+.social-media li{
+    padding-top:2%;
 }
 
-.navbar-nav .nav-item {
-    
-}
 
-.social-icons {
-  
-}
 
 
 /* HERO */
 
-.hero img{
+.hero {
+    background-image: url('../../img/fondherogrand.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+
+/* WELCOME */ 
+
+
+.welcome {
+    border:var(--blanc) 3px solid;
+    margin-top:3rem;
+   max-width: 90%;
+   margin-left:5%;
+   background-color: var(--darkgrey);
+   font-weight:700;
+   margin-bottom: 3rem;
+   z-index: 200;
+}
+
+.welcome p {
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align:center;
+    padding-bottom: 1em;
+}
+
+.welcome img {
+    
+    max-width: 250px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+} 
+
+.backgroundsvg {
+    background-image: url('../../img/pattern.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.leafwelcome {
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+/* SLIDER */ 
+
+
+.backgroundsvgcarousel {
+    background-image: url('../../img/pattern.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 660px;
+}
+
+
+
+.backgroundsvgcarousel .caroutext {
+    border: var(--blanc) solid 2px;
+    background-color: var(--night);
+    text-align: center;
+    width: 29rem;
+    height: 14rem;
+    padding-top: 2rem;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.backgroundsvgcarousel .caroutext p:first-child {
+    margin-bottom: 5rem;
+}
+
+/* CAROUSEL */
+
+
+
+
+ /* NOTRE CARTE */
+
+
+.rowcarte {
+    position: relative;
+    margin-bottom: 9%;
+    height: 430px;
+}
+
+.notrecarte {
+    border: var(--blanc) 2px solid;
+    background-color: var(--lightgray);
+    text-align: center;
+    padding-top:1rem;
+}
+
+.rowcarte img {
+    margin-top:3%;
+    z-index: 500;
+}
+
+.btn-notrecarte {
+    position:absolute;
+    right: 15%;
+    top:105%;
+}
+.leafcarte {
+    position: absolute;
+    z-index: 0;
+    transform: rotate(3.4rad);
+}
+
+
+/* BANNER */
+
+.banner {
+    background: url('../../img/reveillon-du-nouvel-an-celebre-rio-janeiro-bresil.jpg') fixed center/cover no-repeat;
+    height: 50vh;
+    width: auto;
+    margin-top: 5%;
+    border-top: var(--blanc) 2px solid;
+    border-bottom: var(--blanc) 2px solid;
+}
+
+
+
+/* NOS SERVICES */
+
+
+
+
+
+.restauration {
+    height: 330px;
+    width: 65%;
+    border: var(--green) 4px solid;
+    background-color: var(--blanc);
+    color: var(--background);
+    text-align: center;
+}
+.services .restauration p, .services .traiteur p {
+    padding-top: 1.5rem;
+}
+.traiteur {
+    background-color: var(--blanc);
+    color:var(--background);
+    border: var(--green) 4px solid;
+    margin-top:5%;
+    text-align: center;
+    z-index: 300;
+    }
+.leafservice {
+    position: absolute;
+    z-index: 0;
+    transform: rotate(0.6rad);
+    }
+.leaftraiteur {
+    position: absolute;
+    z-index: 0;
+    transform: rotate(0.2rad);
+    }
+
+
+/* BANNER BAS DE PAGE */
+
+.banner2 img{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.acces {
+    border: var(--blanc) 2px solid;
+    background-color: var(--darkgrey);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 5%;
+    position: relative;
+}
+
+.acces strong {
+    font-size: 20px;
+}
+
+.googlemap {
+    margin-top:5%;
+    overflow: hidden;
+    z-index: 200;
+}
+.leafgoogle {
+    position: absolute;
+    z-index: 0;
+    transform: rotate(2.8rad);
+    }
+
+
+/* FOOTER */
+
+.follow {
+    background-color: var(--night);
+    border-top: var(--green) 2px solid;
+}
+
+.footerline2 {
+    background-color: var(--lightgray);
+}
+
+.footerline3 {
+    background-color: var(--darkgrey);
+}
+
+.follow, .footerline2, .footerline3 {
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+}
+
+footer .follow ul, .footerline2 ul, .footerline3 ul {
+    list-style-type: none;
+    margin: 0;
     display: flex;
 }
+
+.follow a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.footer .follow li:first-child {
+    padding-top: 20px;
+}
+
+.footerweb a {
+    text-decoration: none;
+    color: var(--blanc);
+}
+
+
+
+/* PAGE SERVICES O BRAZIL */
+
+.ambiance {
+    border:var(--green) solid 2px;
+    background-color: var(--darkgrey);
+    padding:3% 3% 3% 3%;
+    text-align: center;
+}
+.ambiance p {
+    margin-bottom:0;
+    color: var(--chili);
+}
+.articlemenu {
+    border: var(--green) 2px solid;
+    background-color: var(--blanc);
+    color: var(--background);
+}
+
+
+/* PAGE PLAN DU SITE */ 
+
+
+
+.plan {
+    color: var(--blanc);
+    text-decoration: none;
+    padding-top:10%;
+    padding-bottom:10%;
+    font-size: 1.4rem;
+    background-image: url(../../img/blobsolo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;   
+    line-height: 2.4rem;
+    padding-top:8rem;
+    padding-bottom:8rem;
+}
+
+.plan a{
+    text-decoration: none;
+    color: var(--blanc);
+    text-align: center;
+}
+
+/* PAGE NOTRE CARTE */
+
+.global-menu h2{
+margin-top:1.5rem;
+margin-bottom: 1.5rem;
+}
+
+
+
+.global-menu {
+    background-image: url(../../img/backgroundfeuillestransparency.png);
+    padding-bottom: 8%;
+}
+
+.global-menu em{
+    font-size:12px;
+}
+
+
+.drink-table, .dish-table {
+    width: 100%;
+}
+
+
+.drink-table th, .dish-table th {
+    width: 20%;
+    text-align: left;
+}
+
+.drink-table td, .dish-table td {
+    width: 80%;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.price {
+    text-align: right!important;
+    color: var(--dore);
+}
+
+.price:nth-child(2n+1) {
+    color: var(--chili);
+}
+
+.warning {
+    color: var(--chili);
+    font-style: italic;
+    font-size: 10px;
+}
+
+/* PAGE MENTIONS LEGALES */
+
+.mentions {
+    margin-top:3%;
+    margin-bottom: 5%;
+}
+
+.textemention h2{
+    font-weight: 700;
+    color: var(--chili);
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.mentions h1 {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.editeursite {
+    margin-bottom: 5%;
+}
+
+.titrepage {
+    color: var(--dore);
+    text-align: center;
+}
+
+/* PAGE CONTACT */
+
+.disclaimer p{
+    font-size: 10px;
+}
+
+/* PAGE NOTRE-RESTAURANT */
+
+.article1 {
+    border: var(--darkgrey) 2px solid;
+    border-radius: 15px 15px 15px 15px;
+    background-image: url(../../img/backgroundfeuillestransparency.png);
+}
+
+.article1 p{
+    line-height: 2rem;
+}
+
+.article1 img{
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* MEDIA QUERY SMALL SCREEN */
+
+@media screen and (min-width: 300px) and (max-width: 540px) {
+    .custom-toggler .navbar-toggler-icon {
+        color: #ff0000; 
+    }
+    .navbar-nav i{
+        display:none;
+    }
+    .hero {
+        background-image: url('../../img/fondheropetit.png');
+    }
+    .rowcarte img {
+        display:none;
+    }
+    .btn-notrecarte {
+        top:120%;
+    }
+    .banner {
+        margin-top:40%;
+    }
+    .services {
+        background-color: var(--blanc);
+        border:var(--green) 4px solid;
+        width: 90%;
+        margin-left:5%;
+        margin-top:5%;
+    }
+    .restauration {
+        border : none;
+        width: 100%;
+        height: auto;
+    }
+    .restauration p {
+        margin-top:10%;
+    }
+    .traiteur {
+        border: none;
+    }
+    .acces {
+        display: block;
+        width:85%;
+        margin-left:8%;
+    }
+
+    iframe {
+        display: block;
+        margin-bottom: 10%;
+    }
+
+    .footerweb {
+        display:none;
+    }
+    .footermobile {
+        text-align: center;
+        list-style-type: none;
+        max-width: 100% auto;
+    }
+    .footermobile .contactfooter {
+        font-size: 10px;
+        line-height: 0.1rem;
+    }
+    .footermobile .contactfooter:first-child{
+        font-size:14px;
+    }
+    .contactfooter {
+        background-color: var(--night);
+        border: var(--green) 1px solid;
+        height:5rem;
+    }
+    .socialfooter {
+        background-color: var(--darkgrey);
+        height: 5rem;
+        padding-top:1.5rem;
+    }
+
+    .socialfooter a {
+        color: var(--blanc) !important;
+        padding:0 1rem 0 1rem;
+        font-size: 1.5rem;
+    }
+    .lowfooter1, .lowfooter2, .lowfooter3 {
+        height: 5rem;
+        border:var(--green) 1px solid;
+    }
+    .lowfooter1 p {
+        margin-bottom: 0;
+    }
+    .lowfooter2 p {
+        margin-bottom: 0;
+    }
+    .lowfooter3 p {
+        margin-bottom: 0;
+    }
+    .googlemap {
+        width: 100%;
+    }
+    .caroutext {
+        display: none;
+      }
+    .backgroundsvgcarousel {
+        background-image: none;
+        height:auto;
+        margin: 0 0 1rem 0;
+    }    
+      .leafwelcome {
+        display: none;
+    }
+    .leafcarte {
+        display: none;
+    }
+    .leafservice {
+        display: none;
+    }
+    .leaftraiteur {
+        display: none;
+    }
+    .leafgoogle {
+       display: none;
+    }
+    
+    
+ }
+
+/* MEDIA QUERY MID SCREEN */
+
+@media screen and (min-width : 541px) and (max-width : 1200px){
+    .carteimg {
+        display:none;
+    }
+    .caroutext {
+        display:none;
+    }
+    .notrecarte {
+        margin-top:10%;
+    }
+    .restauration {
+        width: 100%;
+        padding-top:5%;
+    }
+    .footermobile {
+        display:none;
+    }
+    .leafwelcome {
+        display: none;
+    }
+    .leafcarte {
+        display: none;
+    }
+    .leafservice {
+        display: none;
+    }
+    .leaftraiteur {
+        display: none;
+    }
+    .leafgoogle {
+       display: none;
+    }
+    .breadcrumb{
+        display: none;
+    }
+}
+
+
+
+/* MEDIA QUERY LARGE SCREEN */
+
+@media screen and (min-width : 1201px) {
+    .backgroundsvg {
+        background-image:none;
+    }
+    .btn-notrecarte {
+        right: 5%;
+        top:94%;
+    }
+    .caroutext {
+    }
+    .acces {
+        margin-bottom: 3rem;
+    }
+    .restauration {
+        position: absolute;
+        height: 330px;
+        width: 65%;
+        border: var(--green) 4px solid;
+        background-color: var(--blanc);
+        color: var(--background);
+        text-align: center;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+        padding: 2.5rem 5% 0 8%;
+        top:5%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+    }
+    .service1 img {
+        height: 400px;
+        position: relative;
+        z-index: 5;
+        margin-top:7%;
+        border: var(--blanc) 2px solid;
+    }
+    .services {
+        position: relative;
+    }
+    
+    .service1 {
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .services .btn {
+        position: absolute;
+        right: 45%;
+        z-index:10;
+    }
+    
+    .service1 .btn {
+        top:67%;
+        right:10%;
+    }
+
+    .service2 .btn {
+        bottom:-2%;
+        right:45%;
+    }
+
+    .traiteur {
+        width: 65%;
+        padding-right: 10%;
+        height:330px;
+        padding-top:3%;
+        padding-left:5%;
+    }
+    .service2 img {
+        position:absolute;
+        top:50%;
+        left: 55%;
+        height:26rem; 
+        border:var(--blanc) 2px solid;      
+    }
+    .containerslider {
+        margin-left:50%;
+        width:50%;
+        height:50px }
+
+    .carteimg {
+        width: 100%;
+        z-index:2;
+    }
+    .caroutext {
+        z-index: 1000;
+        position: relative;
+        left:6%;        
+    }
+    .notrecarte {
+        width:750px;
+        position: absolute;
+        top:15%;
+        right:0%;
+    }
+    .carousel-inner {
+        height: 660px;
+    }
+    .footermobile {
+        display:none;
+    }
+    #footerbaspage li {
+       text-align: center;
+    }
+    .leafwelcome {
+        right:14%;
+        top: 130%;
+    }
+    .leafcarte {
+        left:12%;
+        top:250%;
+    }
+    .leafservice {
+        right:11%;
+        bottom:83%;
+    }
+    .leaftraiteur {
+        left:10%;
+        bottom:3%;
+    }
+    .leafgoogle {
+        left:185%;
+        top:12%;
+    }
+}
+    
+/* MEDIA QUERY ULTRAWIDE HERO */
+
+@media screen and (min-width : 2400px) {
+    .hero {
+        background-image: url('../../img/fondheroultrawide.png');
+    }
+
+}
+
 
