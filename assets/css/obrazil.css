@@ -15,6 +15,10 @@ body {
     font-family: 'Comfortaa', sans-serif;
 }
 
+strong {
+    font-weight: 700;
+}
+
 /* BREADCRUMB */
 
 .breadcrumb{
@@ -265,6 +269,15 @@ body {
     border-bottom: var(--blanc) 2px solid;
 }
 
+.banner-restaurant {
+    background: url('../../img/closeup-shot-gourmet-vegetable-meat-dish-country-club-new-jersey.jpg') fixed center/cover no-repeat;
+    border: var(--blanc) 2px solid;
+    height: 20vh;
+    width: auto;
+    border-top: var(--blanc) 2px solid;
+    border-bottom: var(--blanc) 2px solid;
+    border-radius: 15px 15px 15px 15px;
+}
 
 
 /* NOS SERVICES */
@@ -385,9 +398,6 @@ li {
 /* PAGE SERVICES O BRAZIL */
 
 .ambiance {
-    border:var(--green) solid 2px;
-    background-color: var(--darkgrey);
-    padding:3% 3% 3% 3%;
     text-align: center;
 }
 .ambiance p {
@@ -399,6 +409,31 @@ li {
     background-color: var(--blanc);
     color: var(--background);
 }
+
+.articleservice1 {
+    border: var(--green) 4px solid;
+    color: var(--background);
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: var(--blanc);
+}
+
+.articleservice1 a{
+    color: var(--chili);
+    font-weight: 700;
+}
+
+.articleservice2 {
+    border: var(--darkgrey) 2px solid;
+    background-image: url(../../img/abstract-pattern.png);
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.articleservice1 img{
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+
 
 
 /* PAGE PLAN DU SITE */ 
@@ -515,16 +550,26 @@ margin-bottom: 1.5rem;
 .article1 {
     border: var(--darkgrey) 2px solid;
     border-radius: 15px 15px 15px 15px;
+    background-image: url(../../img/tropicalbackgroundtransparency.png);
+}
+
+.article2 {
+    border: var(--darkgrey) 2px solid;
+    border-radius: 15px 15px 15px 15px;
     background-image: url(../../img/backgroundfeuillestransparency.png);
 }
 
-.article1 p{
+.article1 p, .article2 p{
     line-height: 2rem;
 }
 
-.article1 img{
+
+
+.article1 img, .article2 img{
     border-radius: 5px 5px 5px 5px;
 }
+
+
 
 /* MEDIA QUERY SMALL SCREEN */
 
