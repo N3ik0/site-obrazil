@@ -19,6 +19,19 @@ strong {
     font-weight: 700;
 }
 
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 5px;
+    background-color:var(--green);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
 /* BREADCRUMB */
 
 .breadcrumb{
@@ -419,11 +432,15 @@ li {
     color: var(--background);
 }
 
-.articleservice1 {
-    border: var(--green) 4px solid;
-    color: var(--background);
-    padding: 1rem 1rem 1rem 1rem;
-    background-color: var(--blanc);
+.brasilflag {
+    background-image: url(../../img/brazil-flag-banner.webp);
+    border-radius: 15px 15px 15px 15px;
+    height: 10vh;
+    width: 100%;
+    border: var(--blanc) 2px solid;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 60%;
 }
 
 .articleservice1 a{
@@ -435,6 +452,7 @@ li {
     border: var(--darkgrey) 2px solid;
     background-image: url(../../img/abstract-pattern.png);
     padding: 1rem 1rem 1rem 1rem;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .imgarticle1 img{

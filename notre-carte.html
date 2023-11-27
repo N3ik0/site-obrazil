@@ -75,6 +75,18 @@
 
 </header>
 
+
+<label for="menuDeroulant">Sélectionnez une catégorie :</label>
+    <select id="menuDeroulant" onchange="scrollToSection()">
+        <option value="entrees">Entrées</option>
+        <option value="plats">Plats principaux</option>
+        <option value="desserts">Desserts</option>
+        <option value="boissons">Boissons</option>
+        <option value="cartedesvins">Vins</option>
+    </select>
+
+
+
 <!--APERITIFS ET COCKTAILS-->
 
 <main class="global-menu container col-10">
@@ -418,7 +430,7 @@
         
             <!-- GLACES ET COUPES GLACEES -->
         
-            <div class="glaces">
+            <div id="glaces">
                 <h2 class="dish-title">Glaces</h2>
                 <p>Coco, melon, framboise, café, passion, citron, ananas, vanille, chocolat, banane, pistache, mangue</p>
                 <table class="dish-table">
@@ -467,7 +479,7 @@
 
         <!--CARTE DES VINS-->
 
-        <section class="cartedesvins">
+        <section id="cartedesvins">
 
             <!-- VINS DU BRESIL -->
         
@@ -783,6 +795,8 @@
     </section>
     </div>
 
+    <button id="backToTopBtn" onclick="backToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+
 </main>
 
 <!--FOOTER WEB-->
@@ -890,6 +904,38 @@
             lastScrollTop = st <= 0 ? 0 : st;
         });
     });
+
+        // menu to section 
+        function scrollToSection() {
+            var menuDeroulant = document.getElementById("menuDeroulant");
+            var selectedSectionId = menuDeroulant.value;
+            var selectedSection = document.getElementById(selectedSectionId);
+
+            if (selectedSection) {
+                selectedSection.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+            }
+        }
+
+        // Flèche backtotop
+
+          function backToTop() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        }
+
+        function toggleBackToTopButton() {
+            var backToTopBtn = document.getElementById("backToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        window.onscroll = function() {
+            toggleBackToTopButton();
+        };
+
 </script>
 
 
