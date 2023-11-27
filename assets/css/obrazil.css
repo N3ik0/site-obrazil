@@ -48,6 +48,7 @@ strong {
     border-radius: 0;
 }
 
+
 .btn-noir {
     background-color:var(--night);
     color:var(--blanc);
@@ -196,11 +197,21 @@ strong {
 
 
 .backgroundsvgcarousel {
+    position: relative;
     background-image: url('../../img/pattern.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 660px;
+   /*  height: 660px; */
+}
+
+.containerslider {
+    position:relative;
+    height:100%;
+}
+
+.containerslider {
+    height:100%;
 }
 
 
@@ -231,7 +242,6 @@ strong {
 .rowcarte {
     position: relative;
 /*     margin-bottom: 9%; */
-    height: 430px;
 }
 
 .notrecarte {
@@ -249,7 +259,7 @@ strong {
 .btn-notrecarte {
     position:absolute;
     right: 15%;
-    top:105%;
+    bottom:-7%;
 }
 .leafcarte {
     position: absolute;
@@ -261,16 +271,15 @@ strong {
 /* BANNER */
 
 .banner {
-    background: url('../../img/reveillon-du-nouvel-an-celebre-rio-janeiro-bresil.jpg') fixed center/cover no-repeat;
-    height: 50vh;
+    background: url('../../img/reveillon-du-nouvel-an-celebre-rio-janeiro-bresil.webp') fixed center/cover no-repeat;
+    height: 30vh;
     width: auto;
-    margin-top: 2%;
     border-top: var(--blanc) 2px solid;
     border-bottom: var(--blanc) 2px solid;
 }
 
 .banner-restaurant {
-    background: url('../../img/closeup-shot-gourmet-vegetable-meat-dish-country-club-new-jersey.jpg') fixed center/cover no-repeat;
+    background: url('../../img/closeup-shot-gourmet-vegetable-meat-dish-country-club-new-jersey\ copie.webp') fixed center/cover no-repeat;
     border: var(--blanc) 2px solid;
     height: 20vh;
     width: auto;
@@ -428,8 +437,10 @@ li {
     padding: 1rem 1rem 1rem 1rem;
 }
 
-.articleservice1 img{
+.imgarticle1 img{
     border-radius: 15px 15px 15px 15px;
+    height:90%;
+    width: 100% auto;
 }
 
 
@@ -566,7 +577,7 @@ margin-bottom: 1.5rem;
 
 
 .article1 img, .article2 img{
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 
@@ -702,10 +713,8 @@ margin-bottom: 1.5rem;
 
 /* MEDIA QUERY SMALL SCREEN */
 
+
 @media screen and (min-width: 300px) and (max-width: 540px) {
-    .custom-toggler .navbar-toggler-icon {
-        color: #ff0000; 
-    }
     .navbar-nav i{
         display:none;
     }
@@ -716,10 +725,10 @@ margin-bottom: 1.5rem;
         display:none;
     }
     .btn-notrecarte {
-        top:120%;
+        bottom:-6%;
     }
     .banner {
-        margin-top:40%;
+        margin-top:13%;
     }
     .services {
         background-color: var(--blanc);
@@ -835,7 +844,12 @@ margin-bottom: 1.5rem;
     }
     .notrecarte {
         margin-top:10%;
+        margin-bottom: 10%;
     }
+    .btn-notrecarte {
+        top:%;
+    }
+
     .restauration {
         width: 100%;
         padding-top:5%;
@@ -886,9 +900,15 @@ body.index-page {
     .backgroundsvg {
         background-image:none;
     }
+    .banner {
+        margin-top:3%;
+    }
+    .backgroundsvgcarousel {
+        height:660px;
+    }
     .btn-notrecarte {
         right: 5%;
-        top:94%;
+        bottom:-13%;
     }
     .caroutext {
     }
