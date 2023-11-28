@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="assets/css/obrazil.css">
 <link rel="shortcut icon" href="img/Logo-Obrazil.png">
 <script src="assets/js/bootstrap.bundle.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <title>Restaurant Ô Brazil</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,6 +54,7 @@
               <!--   <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <a href="" alt="#">FRANCAIS</a>
                 </button> -->
+            </div>
         </div>
     </nav>
 
@@ -77,14 +78,13 @@
     <div class="container">
         <div class="row">
             <div class="plan col-12">
-                <a href="index.html" alt="" class="d-block">Accueil</a>
-                <a href="notre-carte.html" alt="" class="d-block">Notre carte</a>
-                <a href="galerie.html" alt="" class="d-block">Galerie</a>
-                <a href="notre-restaurant.html" alt="" class="d-block">Notre restaurant</a>
-                <a href="services.html" alt="" class="d-block">Nos services</a>
-                <a href="mentions-legales.html" alt="" class="d-block">Mentions légales</a>
-                <a href="nous-contacter.html" alt="" class="d-block">Nous contacter</a>
-                <a href="a-propos.html" alt="" class="d-block">A propos</a>
+                <a href="index.html" class="d-block">Accueil</a>
+                <a href="notre-carte.html" class="d-block">Notre carte</a>
+                <a href="galerie.html" class="d-block">Galerie</a>
+                <a href="notre-restaurant.html" class="d-block">Notre restaurant</a>
+                <a href="services.html" class="d-block">Nos services</a>
+                <a href="mentions-legales.html" class="d-block">Mentions légales</a>
+                <a href="nous-contacter.html" class="d-block">Nous contacter</a>
             </div>
         </div>
     </div>
@@ -171,18 +171,25 @@
 
     <div class="mobfoot row g-0">
         <div class="lowfooter1 col-4">
-            <i class="fa-solid fa-file-contract"></i>
-            <p>Mentions légales</p>
+            <a href="mentions-legales.html">
+                <i class="fa-solid fa-file-contract"></i>
+                <p>Mentions légales</p>
+            </a>
         </div>
         <div class="lowfooter2 col-4">
-            <i class="fa-solid fa-circle-info"></i>
-            <p>A propos</p> 
+            <a href="plan-du-site.html">
+                <i class="fa-solid fa-map"></i>
+                <p>Plan du site</p> 
+            </a>
         </div>
         <div class="lowfooter3 col-4">
-            <i class="fa-regular fa-envelope"></i>
-            <p>Contact</p>
+            <a href="nous-contacter.html">
+                <i class="fa-regular fa-envelope"></i>
+                <p>Contact</p>
+            </a>
         </div>
     </div>
+    
 </footer>
 
 

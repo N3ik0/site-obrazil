@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="assets/css/obrazil.css">
 <link rel="shortcut icon" href="img/Logo-Obrazil.png">
 <script src="assets/js/bootstrap.bundle.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -64,6 +64,7 @@
               <!--   <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <a href="" alt="#">FRANCAIS</a>
                 </button> -->
+            </div>
         </div>
     </nav>
 
@@ -77,13 +78,13 @@
     </div>
 </header>
 
-<div class="titrepage container">
+<section class="titrepage container">
     <h1>Mentions légales d'Ô Brazil, votre restaurant à strasbourg</h1>
-</div>
+</section>
 
 <!--TABLEAU MENTIONS LEGALES-->
 
-<section class="mentions">
+<div class="mentions">
     <div class="container col-10">
         <table>
             <tr>
@@ -145,7 +146,7 @@
             </tr>
         </table>
     </div>
-</section>
+</div>
 
 <section class="textemention">
     <div class="container">
@@ -214,6 +215,21 @@
                     l'exécution des présentes sera de la 
                     compétence exclusive des tribunaux français.</p>
         </div>
+        <div>
+            <h2>8. Crédits</h2>
+        
+            <p>Les images et graphiques utilisés sur le site "Ô Brazil" sont soumis aux droits d'auteur et aux licences appropriées. Les crédits suivants s'appliquent :</p>
+        
+            <ul>
+                <li>L'image de la vue plongeante sur le bol de salade, utilisée dans l'article 4/4, est fournie par @freepik et est disponible sur <a href="https://www.freepik.com" target="_blank">www.freepik.com</a></li>
+                <li>Les images de la bannière du corcovado et de la bannière de nourriture brésilienne sont soumises aux droits d'auteur de [Nom de l'artiste ou du photographe].</li>
+                <li>Les images de la danseuse sont soumises aux droits d'auteur @master1305.</li>
+                <li>Les SVG utilisés dans le site sont fournis par Freepik et sont soumis à la licence de Freepik. Vous pouvez trouver ces SVG sur le site Freepik à l'adresse suivante : <a href="https://www.freepik.com" target="_blank">www.freepik.com</a>.</li>
+            </ul>
+        
+            <p>Toute utilisation non autorisée de ces éléments est strictement interdite. Si vous avez des questions sur l'utilisation des médias présents sur le site, veuillez nous contacter à l'adresse e-mail : email@obrazil.fr.</p>
+        </div>
+        
     </div>
 
 </section>
@@ -296,18 +312,25 @@
 
     <div class="mobfoot row g-0">
         <div class="lowfooter1 col-4">
-            <i class="fa-solid fa-file-contract"></i>
-            <p>Mentions légales</p>
+            <a href="mentions-legales.html">
+                <i class="fa-solid fa-file-contract"></i>
+                <p>Mentions légales</p>
+            </a>
         </div>
         <div class="lowfooter2 col-4">
-            <i class="fa-solid fa-circle-info"></i>
-            <p>A propos</p> 
+            <a href="plan-du-site.html">
+                <i class="fa-solid fa-map"></i>
+                <p>Plan du site</p> 
+            </a>
         </div>
         <div class="lowfooter3 col-4">
-            <i class="fa-regular fa-envelope"></i>
-            <p>Contact</p>
+            <a href="nous-contacter.html">
+                <i class="fa-regular fa-envelope"></i>
+                <p>Contact</p>
+            </a>
         </div>
     </div>
+
 </footer>
 
 </body>

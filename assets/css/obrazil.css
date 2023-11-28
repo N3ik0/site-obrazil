@@ -23,13 +23,14 @@ strong {
     display: none;
     position: fixed;
     bottom: 100px;
-    right: 5px;
+    right: 25px;
     background-color:var(--green);
     color: white;
     border: none;
-    border-radius: 50%;
-    padding: 5px;
+    border-radius: 20%;
+    padding: 10px;
     cursor: pointer;
+    opacity: 40%;
 }
 
 /* BREADCRUMB */
@@ -98,7 +99,7 @@ strong {
 
 .navbar {
     background-color: var(--background);
-    padding-bottom: 0 auto;
+    padding-bottom: 0;
 }
 
 #navbarSupportedContent {
@@ -109,6 +110,7 @@ strong {
     padding-right:1.5rem;
     font-weight: 700;
     font-size: 1rem;
+    width:100%;
 }
 #navbarSupportedContent li:not(:last-child) {
     padding-right:1.5rem;
@@ -458,7 +460,7 @@ li {
 .imgarticle1 img{
     border-radius: 15px 15px 15px 15px;
     height:90%;
-    width: 100% auto;
+    width: 100%;
 }
 
 
@@ -783,7 +785,11 @@ margin-bottom: 1.5rem;
     .footermobile {
         text-align: center;
         list-style-type: none;
-        max-width: 100% auto;
+        max-width: 100%;
+    }
+    .footermobile a{
+        color: var(--blanc);
+        text-decoration: none;
     }
     .footermobile .contactfooter {
         font-size: 10px;
@@ -864,10 +870,6 @@ margin-bottom: 1.5rem;
         margin-top:10%;
         margin-bottom: 10%;
     }
-    .btn-notrecarte {
-        top:%;
-    }
-
     .restauration {
         width: 100%;
         padding-top:5%;
@@ -1043,6 +1045,9 @@ body.index-page {
     .leafgoogle {
         left:185%;
         top:12%;
+    }
+    #backToTopBtn {
+        right: 15rem;
     }
 }
     

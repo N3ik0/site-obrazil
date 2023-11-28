@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="assets/css/obrazil.css">
 <link rel="shortcut icon" href="img/Logo-Obrazil.png">
 <script src="assets/js/bootstrap.bundle.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -61,6 +61,7 @@
               <!--   <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <a href="" alt="#">FRANCAIS</a>
                 </button> -->
+            </div>
         </div>
     </nav>
 
@@ -75,16 +76,16 @@
 
 </header>
 
-
-<label for="menuDeroulant">Sélectionnez une catégorie :</label>
-    <select id="menuDeroulant" onchange="scrollToSection()">
-        <option value="entrees">Entrées</option>
-        <option value="plats">Plats principaux</option>
-        <option value="desserts">Desserts</option>
-        <option value="boissons">Boissons</option>
-        <option value="cartedesvins">Vins</option>
+<div class="container">
+    <!-- <label for="menuDeroulant">Sélectionnez une catégorie :</label> -->
+        <select id="menuDeroulant" class="pt-1 pb-1" onchange="scrollToSection()">
+            <option value="entrees">Entrées</option>
+            <option value="plats">Plats principaux</option>
+            <option value="dessertsglaces">Desserts</option>
+            <option value="boissons">Boissons</option>
+            <option value="cartedesvins">Vins</option>
     </select>
-
+</div>
 
 
 <!--APERITIFS ET COCKTAILS-->
@@ -105,7 +106,7 @@
                         </tr>
                         <tr>
                             <td>Schweppes (25cl)</td>
-                            <td class="price" colspan="2"><!--PRIX A CONFIRMER--></td>
+                            <td class="price"><!--PRIX A CONFIRMER--></td>
                         </tr>
                         <tr>
                             <td>Jus d'orange (20cl)</td>
@@ -121,7 +122,7 @@
                         </tr>
                         <tr>
                             <td>Ananas, Mangue, Passion</td>
-                            <td class="price" colspan="2"><!--PRIX A CONFIRMER--></td>
+                            <td class="price"><!--PRIX A CONFIRMER--></td>
                         </tr>
                         <tr>
                             <td>Cocktail maison de fruits tropicaux</td>
@@ -408,11 +409,11 @@
         </div>
         
 
-        </section>
+    
 
         <!--DESSERTS-->
 
-        <section class="dessertsglaces">
+        <section id="dessertsglaces">
 
             <!-- DESSERTS -->
         
@@ -793,7 +794,7 @@
             </p>
         </div> 
     </section>
-    </div>
+
 
     <button id="backToTopBtn" onclick="backToTop()"><i class="fa-solid fa-arrow-up"></i></button>
 
@@ -875,18 +876,25 @@
 
     <div class="mobfoot row g-0">
         <div class="lowfooter1 col-4">
-            <i class="fa-solid fa-file-contract"></i>
-            <p>Mentions légales</p>
+            <a href="mentions-legales.html">
+                <i class="fa-solid fa-file-contract"></i>
+                <p>Mentions légales</p>
+            </a>
         </div>
         <div class="lowfooter2 col-4">
-            <i class="fa-solid fa-circle-info"></i>
-            <p>A propos</p> 
+            <a href="plan-du-site.html">
+                <i class="fa-solid fa-map"></i>
+                <p>Plan du site</p> 
+            </a>
         </div>
         <div class="lowfooter3 col-4">
-            <i class="fa-regular fa-envelope"></i>
-            <p>Contact</p>
+            <a href="nous-contacter.html">
+                <i class="fa-regular fa-envelope"></i>
+                <p>Contact</p>
+            </a>
         </div>
     </div>
+
 </footer>
 
 <script>
