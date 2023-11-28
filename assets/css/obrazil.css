@@ -156,7 +156,7 @@ strong {
 /* HERO */
 
 .hero {
-    background-image: url('../../img/fondherogrand.png');
+    background-image: url('../../img/fondherogrand.webp');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -203,7 +203,7 @@ strong {
 
 .leafwelcome {
     position: absolute;
-    z-index: 1;
+    z-index: 2000;
 }
 
 
@@ -739,7 +739,7 @@ margin-bottom: 1.5rem;
         display:none;
     }
     .hero {
-        background-image: url('../../img/fondheropetit.png');
+        background-image: url('../../img/fondheropetit.webp');
     }
     .rowcarte img {
         display:none;
@@ -1055,7 +1055,7 @@ body.index-page {
 
 @media screen and (min-width : 2400px) {
     .hero {
-        background-image: url('../../img/fondheroultrawide.png');
+        background-image: url('../../img/fondheroultrawide.webp');
     }
 
 }

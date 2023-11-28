@@ -6,12 +6,7 @@
 <link rel="stylesheet" href="assets/css/bootstrap.css">
 <link rel="stylesheet" href="assets/css/obrazil.css">
 <link rel="shortcut icon" href="img/Logo-Obrazil.png">
-<script src="assets/js/bootstrap.bundle.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 <title>Restaurant Ô Brazil</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -810,13 +805,13 @@
                         Suivez nous:<br><i class="fa-solid fa-arrow-right"></i>
                     </li>
                     <li class="col-3">
-                        <a class="navsocial" href="https://www.facebook.com/p/Restaurant-O-Brazil-100063755682659/">Facebook<br><i class="fa-brands fa-square-facebook"></i></a>
+                        <a class="navsocial" href="https://www.facebook.com/p/Restaurant-O-Brazil-100063755682659/" target="_blank">Facebook<br><i class="fa-brands fa-square-facebook"></i></a>
                     </li>
                     <li class="col-3">
-                        <a class="navsocial" href="https://instagram.com/restaurantobrazil?igshid=YTQwZjQ0NmI0OA==">Instagram<br><i class="fa-brands fa-instagram"></i></a>
+                        <a class="navsocial" href="https://instagram.com/restaurantobrazil?igshid=YTQwZjQ0NmI0OA==" target="_blank">Instagram<br><i class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li class="col-3">
-                        <a class="navsocial" href="https://www.tiktok.com/@restaurantobrazil67">Tiktok<br><i class="fa-brands fa-tiktok"></i></a>
+                        <a class="navsocial" href="https://www.tiktok.com/@restaurantobrazil67" target="_blank">Tiktok<br><i class="fa-brands fa-tiktok"></i></a>
                     </li>
                     
                 </ul>
@@ -836,10 +831,10 @@
             <div class="container">
                 <ul>
                     <li class="col-3">
-                        <a href="index.html">Accueil<br><i class="fa-solid fa-house"></i></a>
+                        Nos liens:<br><i class="fa-solid fa-arrow-right"></i>
                     </li>
                     <li class="col-3">
-                        <a href="a-propos.html">A propos<br><i class="fa-solid fa-circle-info"></i></a>
+                        <a href="index.html">Accueil<br><i class="fa-solid fa-house"></i></a>
                     </li>
                     <li class="col-3">
                         <a href="mentions-legales.html">Mentions légales<br><i class="fa-solid fa-scale-balanced"></i></a>
@@ -897,54 +892,11 @@
 
 </footer>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var lastScrollTop = 0;
-
-        window.addEventListener('scroll', function () {
-            var st = window.pageYOffset || document.documentElement.scrollDown;
-
-            if (st > 600) {
-                document.querySelector('.navbar').classList.remove('navbar-hidden');
-            } else {
-                document.querySelector('.navbar').classList.remove('navbar-hidden');
-            }
-            lastScrollTop = st <= 0 ? 0 : st;
-        });
-    });
-
-        // menu to section 
-        function scrollToSection() {
-            var menuDeroulant = document.getElementById("menuDeroulant");
-            var selectedSectionId = menuDeroulant.value;
-            var selectedSection = document.getElementById(selectedSectionId);
-
-            if (selectedSection) {
-                selectedSection.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-            }
-        }
-
-        // Flèche backtotop
-
-          function backToTop() {
-            document.body.scrollTop = 0; 
-            document.documentElement.scrollTop = 0; 
-        }
-
-        function toggleBackToTopButton() {
-            var backToTopBtn = document.getElementById("backToTopBtn");
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                backToTopBtn.style.display = "block";
-            } else {
-                backToTopBtn.style.display = "none";
-            }
-        }
-
-        window.onscroll = function() {
-            toggleBackToTopButton();
-        };
-
-</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/custom.js"></script>
 
 
 </body>

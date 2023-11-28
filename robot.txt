@@ -1,0 +1,7 @@
+User-agent: *
+
+# Allow crawling of all other pages
+Allow: /
+
+# Specify location of sitemap
+Sitemap: http://valentin.dwwm.site/
