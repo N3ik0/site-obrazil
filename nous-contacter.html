@@ -76,26 +76,30 @@
             <h2 class="title pt-2 pb-2">Contactez facilement Ô BRAZIL, votre restaurant à STRASBOURG</h2>
  
         <div class="row pt-3">
-            <form>
-                <div class="form-floating col-xl-3 d-inline-block mb-3">
-                    <input type="text" class="form-control" id="inputName" placeholder="Nom" required>
-                    <label for="inputName">Nom*</label>
+            <form action="/votre-script-de-traitement" method="post">
+
+                <div class="input-group">
+                    <span class="input-group-text">Nom et email</span>
+                    <input type="text" aria-label="First name" class="form-control">
+                    <input type="text" aria-label="Last name" class="form-control">
+                  </div>
+    
+                <div class="form-group mt-3">
+                    <label for="objet">Objet :</label>
+                    <input type="text" class="form-control" id="objet" name="objet" required>
                 </div>
-                <div class="form-floating col-xl-3 d-inline-block mb-3">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="E-mail" required>
-                    <label for="inputEmail">E-mail*</label>
+    
+                <div class="form-group mt-3">
+                    <label for="message">Message :</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                 </div>
-                <div class="form-floating col-xl-6 d-inline-block mb-3">
-                    <input type="text" class="form-control" id="inputObject" placeholder="Objet" required>
-                    <label for="inputObject">Objet*</label>
+    
+                <div class="form-group form-check mt-3">
+                    <input type="checkbox" class="form-check-input" id="accepter" name="accepter" required>
+                    <label class="form-check-label" for="accepter">J'accepte le traitement des données</label>
                 </div>
-                <div class="form-floating col-xl-6 d-inline-block mb-3">
-                    <textarea class="form-control" id="inputMessage" style="height: 10rem;" placeholder="Message"></textarea>
-                    <label for="inputMessage">Message</label>
-                </div>
-                <div class="col-12 mb-4">
-                    <button class="btn btn-dark" type="submit">Submit form</button>
-                </div>                            
+    
+                <button type="submit" class="btn btn-jaune mt-3 mb-4">Envoyer</button>
             </form>
         </div>
     </div>

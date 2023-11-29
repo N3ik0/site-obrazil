@@ -164,22 +164,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// GO TO SECTION //
-
-document.addEventListener('DOMContentLoaded', function () {
-    var lastScrollTop = 0;
-
-    window.addEventListener('scroll', function () {
-        var st = window.pageYOffset || document.documentElement.scrollDown;
-
-        if (st > 600) {
-            document.querySelector('.navbar').classList.remove('navbar-hidden');
-        } else {
-            document.querySelector('.navbar').classList.remove('navbar-hidden');
-        }
-        lastScrollTop = st <= 0 ? 0 : st;
-    });
-});
 
     // menu to section 
     function scrollToSection() {
